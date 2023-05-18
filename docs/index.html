@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>AWS Cloud Club IGDTUW</title>
+		<meta charset="UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link
 			rel="stylesheet"
@@ -22,7 +24,7 @@
 	<body>
 		<header>
 			<h1
-				><img src="assets/aws-cloud-club-logo.svg" alt="AWS Icon" /> <img src="assets/igdtuw-logo.jpg" style="height: 80px;"> AWS Cloud Club
+				><img src="assets/aws-cloud-club-logo.svg" alt="AWS Icon" /> <img src="assets/igdtuw-logo.jpg" style="height: 80px;" alt="aws-logo"> AWS Cloud Club
 				IGDTUW</h1
 			>
 			<nav>
@@ -34,13 +36,11 @@
 					<li
 						><a
 							href="https://instagram.com/awscloudclubigdtuw?igshid=ZDdkNTZiNTM="
-							target="_blank"
-							><i class="fab fa-instagram"></i></a
-					></li>
+							target="_blank"  rel="noopener"><i class="fab fa-instagram"></i></a></li>
 					<li
 						><a
 							href="https://www.meetup.com/aws-cloud-club-at-igdtuw/"
-							target="_blank"
+							target="_blank"  rel="noopener"
 							><i class="fab fa-meetup"></i></a>
 				</ul>
 			</nav>
@@ -118,7 +118,7 @@
 					<div class="upcoming-events">
 						<h2>Upcoming Events</h2>
 						<ul>
-							<li>AWS Cloud Club Orientation - Date <a style="color: #FF9900;"><b>Learn More</b></a></li>
+							<li>AWS Cloud Club Orientation - Date <a style="color: #FF9900;"><b class="learn-button">Learn More</b></a></li>
 							<!-- <li>Event 2 - Date</li>
 							<li>Event 3 - Date</li> -->
 						</ul>
@@ -133,6 +133,36 @@
 					</div>
 				</div>
 			</section>
+
+<div class="show-learnMore">
+  <div class="inforec">
+	<span class="close" id="close">&times;</span>
+    <!-- <h2 class="title">More info</h2> -->
+	<h3 class="Learnmore-head">Topic</h3>
+    <p class="learninfo">Lorem ipsum dolor sit amet. Quo dolor nihil qui voluptas facilis et amet 
+assumenda est illum numquam ut reprehenderit optio 33 vero dicta? Sit ducimus rerum et voluptatibus 
+iusto aut saepe maxime qui dolore error. Non atque illo est inventore quia qui sint repellat non optio esse in 
+iusto vero.</p>
+    
+  </div>
+</div>
+		
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var learnMoreBtn = document.querySelector(".learn-button");
+      var popup = document.querySelector(".show-learnMore");
+      var closeBtn = document.querySelector(".close");
+
+      learnMoreBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", function() {
+        popup.style.display = "none";
+      });
+    });
+  </script>
 
 			<!-- <section id="resources">
 				<h2>Resources</h2>
@@ -170,7 +200,7 @@
 					<img src="assets/Aws core team/Arushi Garg.jpg" alt="Arushi Garg" />
 					<h3
 						>Arushi Garg
-						<a href="https://www.linkedin.com/in/arushi-garg105" target="_blank"
+						<a href="https://www.linkedin.com/in/arushi-garg105" target="_blank"  rel="noopener"
 							><i class="fab fa-linkedin"></i></a
 					></h3>
 					<p>Cloud captain</p>
@@ -179,7 +209,7 @@
 					<img src="assets/Aws core team/soumya_aws.jpg" alt="Soumya Vats" />
 					<h3
 						>Soumya Vats
-						<a href="https://www.linkedin.com/in/soumyavats06" target="_blank"
+						<a href="https://www.linkedin.com/in/soumyavats06" target="_blank"  rel="noopener"
 							><i class="fab fa-linkedin"></i></a
 					></h3>
 					<p>Management Head</p>
@@ -190,7 +220,7 @@
 						alt="Priyanka Mohanty" />
 					<h3
 						>Priyanka Mohanty
-						<a href="https://www.linkedin.com/in/priyanka-mohanty-46b656205/" target="_blank"
+						<a href="https://www.linkedin.com/in/priyanka-mohanty-46b656205/" target="_blank"  rel="noopener"
 							><i class="fab fa-linkedin"></i></a
 					></h3>
 					<p>Content Head</p>
@@ -199,7 +229,7 @@
 					<img src="assets/Aws core team/Sukritee .jpg" alt="Sukritee Sharma" />
 					<h3
 						>Sukritee Sharma
-						<a href="https://www.linkedin.com/in/sukritee-sharma/" target="_blank"
+						<a href="https://www.linkedin.com/in/sukritee-sharma/" target="_blank"  rel="noopener"
 							><i class="fab fa-linkedin"></i
 						></a></a
 					></h3>
@@ -209,7 +239,7 @@
 					<img src="assets/Aws core team/Khushi.jpg" alt="Khushi Khokhar" />
 					<h3
 						>Khushi Khokhar
-						<a href="https://www.linkedin.com/in/khushi-khokhar-1114631a2" target="_blank"
+						<a href="https://www.linkedin.com/in/khushi-khokhar-1114631a2" target="_blank"  rel="noopener"
 							><i class="fab fa-linkedin"></i></a
 					></h3>
 					<p>Media Head</p>
