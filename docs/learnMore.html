@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>EVENT</title>
+
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #005276;
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: #FF9900;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 10px 10px 5px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateX(20px) translateY(-20px);
+    }
+
+    .line {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 1px;
+      background-color: white;
+      opacity: 0.5;
+      animation: moveLine 20s linear infinite;
+    }
+
+    .header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+    }
+
+    @keyframes moveLine {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="assets/aws-cloud-club-logo.svg" alt="Logo 1" class="logo">
+    <img src="assets/igdtuw-logo.jpg" alt="Logo 2" class="logo">
+    <span class="text">AWS Cloud Club
+      IGDTUW</span>
+  </div>
+
+  <div class="background">
+    <div class="line"></div>
+  </div>
+
+  <div class="box">
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tristique mauris.</p>
+  </div>
+
+</body>
+
+</html>
