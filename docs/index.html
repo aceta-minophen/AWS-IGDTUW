@@ -18,7 +18,11 @@
 			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
 			crossorigin="anonymous" />
 		<link rel="shortcut icon" href="assets/aws-cloud-club-logo.svg" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 	</head>
+
 	<body>
 		<header>
 			<h1
@@ -55,7 +59,8 @@
 						class="aws-section-button"
 						href="https://aws.amazon.com/developer/community/students/"
 						target="_blank"
-						>Learn More</button
+						>Learn More
+						</button
 					>
 				</div>
 				<div class="slide">
@@ -107,8 +112,7 @@
 				</section>
 			<section id="about">
 				<h2>About AWS</h2>
-				<p
-					>Amazon Web Services(AWS) is a cloud computing platform which aims to
+				<p> Amazon Web Services(AWS) is a cloud computing platform which aims to
 					provide low cost and on the go services to its customer. It includes a
 					mixture of infrastructure-as-a-service(IaaS),
 					platform-as-a-service(PaaS) and packaged-software-as-a-service(SaaS)
@@ -121,18 +125,108 @@
 				<div class="events-container">
 					<div class="upcoming-events">
 						<h2>Upcoming Events</h2>
-						<ul>
-							<li>AWS Cloud Club Orientation - Date <a style="color: #FF9900;"><b>Learn More</b></a></li>
-							<!-- <li>Event 2 - Date</li>
-							<li>Event 3 - Date</li> -->
-						</ul>
-					</div>
-					<div class="past-events">
+						<ul> 
+						<li>Event name - Date
+                                    <div class="modal fade" id="example1ModalToggle" aria-hidden="true" aria-labelledby="example1ModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header" style="background-color:#005276;  color: white">
+                                              <h1 class="modal-title fs-5"  style = "color: white" id="example1ModalToggleLabel" ></h1><b>Event: event_name</b> 
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body " style="background-color:white; color:black" >
+                                                <div><img  src="./assets/aws-logo.png " class="img-fluid" alt="Event Banner"  style="width: 200px 150px;"></div>
+                                             <p ><h3 style= "color: #FF9900">Lorem Ipsum- Event description  </h3></p>
+                                             <p > <h6>Date: 21-06-2023</h6>
+                                             <h6>Platform: Zoom Meetings</h6>
+                                             <h6 >Time: 11 am </h6>
+                                             <h6 >See you there!</h6></p>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button class="btn btn-primary" data-bs-target="#example1ModalToggle2" data-bs-toggle="modal" href style="background-color:#FF9900; color: white" ><a href="https://forms.gle/iyqRx3QAnjGyXd166" style="text-decoration: none; color:white;"><b>RSVP</b></a></button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- <div class="modal fade" id="example1ModalToggle2" aria-hidden="true" aria-labelledby="example1ModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header" style="background-color:#005276; color: white">
+                                              <h1 class="modal-title fs-5" id="example1ModalToggleLabel2" ></h1> <b>Find Minutes of Meeting here</b> 
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h5> Here is the summary of the event !</h5>
+											<ul style="list-style: circle;">
+												<li>point 1</li>
+												<li>point 2</li>
+												<li>point 3</li>
+											</ul>
+                                            </div>
+                                           <div class="modal-footer">
+											<button class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#example1ModalToggle" style="background-color:#FF9900; color: white">Back</button>
+                                            </div> 
+                                          </div>
+                                        </div>
+                                      </div> -->
+                                      <a style="color: #FF9900; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#example1ModalToggle"> 
+                                        <!-- Button trigger modal -->
+                                        <b> Learn More</b>        
+                                     </a></li>
+                                    </ul>
+ 
+                    </div>
+                      <div class="past-events">
 						<h2>Past Events</h2>
-						<ul>
-							<li>Many activities to come!</li>
-							<!-- <li>Event 2 - Date</li>
-							<li>Event 3 - Date</li> -->
+						<ul> 
+						<li>AWS Cloud Club Orientation - Date
+                                    <div class="modal fade" id="example2ModalToggle" aria-hidden="true" aria-labelledby="example2ModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header" style="background-color:#005276;  color: white">
+                                              <h1 class="modal-title fs-5"  style = "color: white" id="example2ModalToggleLabel" ></h1><b>Event: AWS Orientation</b> 
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body " style="background-color:white; color:black" >
+                                                <div><img  src="assets/Aws core team/Sukritee .jpg " class="img-fluid" alt="Event Banner"  style="width: 200px 150px;"></div>
+                                             <p ><h3 style= "color: #FF9900">Lorem Ipsum- Event description  </h3></p>
+                                             <p > <h6>Date: 21-05-2023</h6>
+                                             <h6>Platform: Zoom Meetings</h6>
+                                             <h6 >Time: 11 am </h6>
+                                             <!-- <h6 >See you there!</h6></p> -->
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button class="btn btn-primary" data-bs-target="#example2ModalToggle2" data-bs-toggle="modal"  style="background-color:#FF9900; color: white" ><b>Minutes of Meeting</b> </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="modal fade" id="example2ModalToggle2" aria-hidden="true" aria-labelledby="example2ModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                          <div class="modal-content">
+                                            <div class="modal-header" style="background-color:#005276; color: white">
+                                              <h1 class="modal-title fs-5" id="example2ModalToggleLabel2" ></h1> <b>Find Minutes of Meeting here</b> 
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <h5> Here is the summary of the event !</h5>
+											<ul style="list-style: circle;">
+												<li>point 1</li>
+												<li>point 2</li>
+												<li>point 3</li>
+											</ul>
+                                            </div>
+                                           <div class="modal-footer">
+											<button class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#example2ModalToggle" style="background-color:#FF9900; color: white">Back</button>
+                                            </div> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <a style="color: #FF9900; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#example2ModalToggle"> 
+                                        <!-- Button trigger modal -->
+                                        <b> Learn More</b>        
+                                     </a></li>
+                                    </ul>
 						</ul>
 					</div>
 				</div>
@@ -196,7 +290,7 @@
 						>Priyanka Mohanty
 						<a href="https://www.linkedin.com/in/priyanka-mohanty-46b656205/" target="_blank"
 							><i class="fab fa-linkedin"></i></a
-					></h3>
+					></h3>     
 					<p>Content Head</p>
 				</div>
 				<div class="member">
@@ -242,5 +336,6 @@
 				});
 			});
 		</script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	</body>
 </html>
