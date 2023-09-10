@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <div class="logo">
+        <div class="logo-text">
+    <img src="https://d1.awsstatic.com/cloud-clubs/output-onlinepngtools.bb11c3fe930660112f43083dff0797eff1ef5d5f.png" alt="AWS Cloud Clubs"/>
+    </div>
+    </div>
+    <style>
+        .logo img{
+        float:left;
+        width: 70px;
+        height:auto;
+        cursor: pointer;   
+        }
+        .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000; /* Ensures the logo is above other content */
+        }
+        
+        .logo img {
+        width: 100px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        }</style>
+<head>
+    <title>Frequently Faced Issues</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:  url("https://img.freepik.com/free-vector/dark-blue-waves-dots-abstract-background_79603-879.jpg?size=626&ext=jpg&ga=GA1.2.592214511.1691218590&semt=ais");
+            background-size: cover;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: #e0f0ff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 28px;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f0f7ff;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq:hover {
+            background-color: #d0e1f5;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #005ab5;
+            transition: color 0.3s ease-in-out;
+            font-family: 'Arial Black', sans-serif;
+            font-size: 18px;
+        }
+
+        .question:hover {
+            color: #004087;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+            animation: bounce 0.5s ease;
+            font-family: 'Georgia', serif;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .answer p {
+            margin: 0;
+        }
+
+        .answer.show {
+            display: block;
+            animation: bounce 0.5s ease;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-15px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        .sparkle-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #122c4b;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+			animation: bounce 2s infinite;
+        }
+
+        /* Sparkle animation on hover */
+        .sparkle-button:hover {
+            animation:sparkle 0.5s ease infinite;
+            background-image: linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.2) 25%,
+                transparent 85%,
+                transparent 80%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.2) 75%,
+                transparent 85%,
+                transparent
+            );
+            background-size: 20px 20px;
+        }
+
+        /* Animation keyframes for sparkle effect */
+        @keyframes sparkle {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+		@keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+			
+        }
+    </style>
+</head>
+<body>
+    <button class="sparkle-button"><a href="http://127.0.0.1:5500/docs/index.html" style="color:antiquewhite">Home</a></button>
+    <div class="container">
+        <h1>Frequently Faced Issues</h1>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('faq1')">Q1: What is Lorem Ipsum?</div>
+            <div class="answer" id="faq1">
+                <p>A1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('faq2')">Q2: How do I get started?</div>
+            <div class="answer" id="faq2">
+                <p>A2: To get started, follow the instructions in the documentation provided.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer('faq3')">Q3: What if I encounter an error?</div>
+            <div class="answer" id="faq3">
+                <p>A3: If you encounter an error, please check the error message and try to troubleshoot based on that.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to toggle the display of answers
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.classList.contains('show')) {
+                answer.classList.remove('show');
+            } else {
+                answer.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>
