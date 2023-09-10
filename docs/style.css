@@ -49,14 +49,14 @@ header nav li a {
   background-color: rgb(9, 14, 30);
   color: white;
   height: 450px;
-  position: relative; 
+  position: relative;
 }
 
 .aws-section * {
   color: #fff;
 }
 
-.slick-dots{
+.slick-dots {
   bottom: -35px !important;
 }
 
@@ -78,7 +78,8 @@ header nav li a {
   display: inline-block;
 }
 
-.slide, .slide1 {
+.slide,
+.slide1 {
   text-align: center;
   height: 100%;
   background-size: cover;
@@ -87,7 +88,7 @@ header nav li a {
   position: relative;
 }
 
-.carousel1{
+.carousel1 {
   display: block;
   width: 50%;
   object-fit: cover;
@@ -95,7 +96,6 @@ header nav li a {
   height: 435px;
   z-index: 1;
   filter: brightness(70%);
-  
 }
 
 .slide1 h2 {
@@ -128,7 +128,8 @@ header nav li a {
   text-align: left;
 }
 
-.slide h3, .slide1 h3 {
+.slide h3,
+.slide1 h3 {
   color: #c1c1c1;
   font-size: 1.5em;
   margin-bottom: 20px;
@@ -147,7 +148,7 @@ header nav li a {
 }
 
 .aws-section-button {
-  background-color: #FF9900;
+  background-color: #ff9900;
   color: #000000;
   border: none;
   border-radius: 5px;
@@ -192,12 +193,12 @@ header nav li a {
 }
 
 .upcoming-events {
-  background-color: #F1F3F3;
+  background-color: #f1f3f3;
   padding: 20px;
 }
 
 .past-events {
-  background-color: #F1F3F3;
+  background-color: #f1f3f3;
   padding: 20px;
 }
 
@@ -272,7 +273,6 @@ header nav li a {
   background-color: #333;
 }
 
-
 /* Team Section Styles */
 #team {
   padding: 50px 0;
@@ -314,8 +314,6 @@ header nav li a {
   font-size: 0.9em;
 }
 
-
-
 /* Footer Styles */
 footer {
   background-color: #232f3e;
@@ -326,4 +324,23 @@ footer {
 
 footer p {
   font-size: 0.8em;
+}
+
+/* Facing issue css */
+#helpBtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 200px;
+  height: 40px;
+  color: inherit;
+  background: rgb(80, 100, 121);
+  background: linear-gradient(
+    90deg,
+    rgba(80, 100, 121, 0.9585084033613446) 17%,
+    rgb(122, 130, 141) 100%
+  );
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
