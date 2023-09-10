@@ -327,3 +327,19 @@ footer {
 footer p {
   font-size: 0.8em;
 }
+fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF9900;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+fixed-button:hover {
+  background-color: #FF7700; /* Change color on hover */
+}
+
