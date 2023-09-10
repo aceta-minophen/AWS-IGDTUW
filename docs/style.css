@@ -10,6 +10,26 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#fixed-button {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  background-color:rgb(53, 61, 105); 
+  color: rgb(241, 218, 6); 
+  border: none;;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3ms;
+  border-radius: 5px;
+}
+
+#fixed-button:hover {
+  opacity:1;
+  background-color: #180c5c; 
+}
+
 /* Header Styles */
 header {
   display: flex;
