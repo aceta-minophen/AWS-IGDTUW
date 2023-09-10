@@ -313,7 +313,11 @@ header nav li a {
   color: #232f3e;
   font-size: 0.9em;
 }
-
+.issue{
+  position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
 
 
 /* Footer Styles */
