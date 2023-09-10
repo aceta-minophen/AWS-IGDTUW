@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=">
+        <meta name="viewport" content="width=device-width">
+        <title>Frequently Faced Issues</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">
+                Frequently Faced Issues
+            </h1>
+            <main class="accordion">
+                <div class="faq-img">
+                    <img src="https://www.oledcomm.net/wp-content/uploads/2022/12/undraw_questions_re_1fy7.svg" alt="" class="accordion-img">
+                </div>
+                <div class="content-accordion">
+
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                What is AWS?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum ut. Dolor, vel unde voluptatibus alias ea eligendi odio maxime sunt suscipit sit tenetur, libero in laborum molestiae voluptate quos!</p>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                Is AWS related to Amazon?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum ut. Dolor, vel unde voluptatibus alias ea eligendi odio maxime sunt suscipit sit tenetur, libero in laborum molestiae voluptate quos!</p>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                 How can I be a part of AWS club?                               
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum ut. Dolor, vel unde voluptatibus alias ea eligendi odio maxime sunt suscipit sit tenetur, libero in laborum molestiae voluptate quos!</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                What does AWS club do?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum ut. Dolor, vel unde voluptatibus alias ea eligendi odio maxime sunt suscipit sit tenetur, libero in laborum molestiae voluptate quos!</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                How can i become Aws lead?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum ut. Dolor, vel unde voluptatibus alias ea eligendi odio maxime sunt suscipit sit tenetur, libero in laborum molestiae voluptate quos!</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="question-answer">
+                        <div class="question">
+                            <h3 class="title-question">
+                                What is XYZ?
+                            </h3>
+                            <button class="question-btn">
+                                <span class="up-icon">
+                                    <i class="fa-chevron-up"></i>
+                                </span>
+                                <span class="down-icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum ut. Dolor, vel unde voluptatibus alias ea eligendi odio maxime sunt suscipit sit tenetur, libero in laborum molestiae voluptate quos!</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <script>
+            const questions = document.querySelectorAll('.question-answer')
+
+            questions.forEach(function(question){
+                const btn=question.querySelector('.question-btn');
+                btn.addEventListener("click", function(){
+                    questions.forEach(function(item){
+                        if (item !== question){
+                            item.classList.remove("show-text");
+                        }
+                    })
+                    question.classList.toggle("show-text");
+                })
+            
+            })
+        </script>
+    </body>
+</html>
