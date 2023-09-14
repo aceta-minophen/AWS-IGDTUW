@@ -1,0 +1,149 @@
+  .checkbox-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox-menu-item {
+    margin-bottom: 10px;
+  }
+  /* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #005276;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+}
+
+header h1 img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+/*Navigation Bar Styles*/
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #005276;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar li {
+  margin-left: 20px;
+  font-size: larger;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Styles */
+main {
+  padding: 50px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+/* Content Grid */
+.Categories {
+  padding: 50px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+.grid-item-title {
+  font-weight: bold;
+  padding: 10px;
+}
+
+#horizontal-line {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+/* Categories*/
+.grid-container-sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.grid-item-sub {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid grey;
+  border-top: 5px solid rgb(35, 47, 62);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid-item-sub-title {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.grid-item-category {
+  font-style: italic;
+  padding: 10px;
+}
+
+.grid-item-description {
+  margin-top: 5px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear:both;
+}
+
+footer p {
+  font-size: 0.8em;
+}
