@@ -28,15 +28,33 @@
 		justify-content: center;
 		margin-top: 10%;
 	}
+
+	#dataForm input {
+		margin: 10px;
+		padding: 10px;
+		width: 40%;
+		border-radius: 5px;
+	}
+
+	#dataForm button {
+		margin: 10px;
+		padding: 10px;
+		width: 20%;
+		border-radius: 5px;
+	}
+
+	#minutesInput {
+		overflow-y: auto;
+	}
 </style>
 
 <body>
 	<form id="dataForm">
 		<input type="text" id="topicInput" placeholder="Topic" />
 		<input type="text" id="dateInput" placeholder="Date and time" />
-		<input type="text" id="despInput" placeholder="Description" />
+		<input type="text" id="despInput" placeholder="Platform" />
 		<input type="text" id="speakerInput" placeholder="Speaker" />
-		<input type="file" id="bannerInput" accept="image/*" />
+		<!-- <input type="file" id="bannerInput" accept="image/*" /> -->
 		<input type="text" id="minutesInput" placeholder="Minutes of Meeting" />
 		<input type="file" id="carouselInput" multiple accept="image/*" />
 
@@ -77,16 +95,17 @@
 		var date = document.getElementById('dateInput').value;
 		var description = document.getElementById('despInput').value;
 		var speaker = document.getElementById('speakerInput').value;
+		var minutes = document.getElementById('minutesInput').value;
 
 		// Get the selected files for banner image
-		var bannerImage = document.getElementById('bannerInput').files[0];
+		// var bannerImage = document.getElementById('bannerInput').files[0];
 
 		// Get the selected files for carousel images
 		var carouselImages = document.getElementById('carouselInput').files;
 
 		// Upload the banner image to Firebase Storage
-		var bannerStorageRef = firebase.storage().ref('banners/' + bannerImage.name);
-		var bannerUploadTask = bannerStorageRef.put(bannerImage);
+		// var bannerStorageRef = firebase.storage().ref('banners/' + bannerImage.name);
+		// var bannerUploadTask = bannerStorageRef.put(bannerImage);
 
 		// ...
 
@@ -134,34 +153,36 @@
 				// All carousel images uploaded successfully
 
 				// Get the download URL of the banner image
-				return bannerUploadTask.snapshot.ref.getDownloadURL()
-					.then(function (bannerDownloadURL) {
-						// Banner image upload completed successfully
+				// return bannerUploadTask.snapshot.ref.getDownloadURL()
+				// 	.then(function (bannerDownloadURL) {
+				// Banner image upload completed successfully
 
-						// Save the carousel image URLs in the Realtime Database
-						var carouselImageURLs = downloadURLs;
+				// Save the carousel image URLs in the Realtime Database
+				// var carouselImageURLs = downloadURLs;
 
-						// Save the data entry in the database
-						return newEntryRef.set({
-							topic: topic,
-							date: date,
-							description: description,
-							speaker: speaker,
-							bannerImage: bannerDownloadURL,
-							carouselImages: carouselImageURLs,
-						});
-					})
-					.then(function () {
-						// Data was successfully written
-						console.log('Data written successfully!');
-
-						// Clear the form inputs
-						document.getElementById('topicInput').value = '';
-						document.getElementById('dateInput').value = '';
-						document.getElementById('despInput').value = '';
-						document.getElementById('speakerInput').value = '';
-					});
+				// Save the data entry in the database
+				return newEntryRef.set({
+					topic: topic,
+					date: date,
+					description: description,
+					speaker: speaker,
+					// bannerImage: bannerDownloadURL,
+					minutes: minutes,
+					carouselImages: downloadURLs,
+				});
 			})
+			.then(function () {
+				// Data was successfully written
+				console.log('Data written successfully!');
+
+				// Clear the form inputs
+				document.getElementById('topicInput').value = '';
+				document.getElementById('dateInput').value = '';
+				document.getElementById('despInput').value = '';
+				document.getElementById('speakerInput').value = '';
+				document.getElementById('minutesInput').value = '';
+			})
+			// })
 			.catch(function (error) {
 				// An error occurred during the image upload process or while saving the data entry
 				console.error('Error uploading images or saving data:', error);
