@@ -88,14 +88,15 @@ header nav li a {
 }
 
 .carousel1{
-  display: block;
+  display: cover;
   width: 50%;
   object-fit: cover;
   margin-left: 50%;
   height: 435px;
   z-index: 1;
   filter: brightness(70%);
-  
+  /* background: url(https://www.canva.com/design/DAFusiEPfaU/Ly3H8v5OcojHgLi1GhyA8A/edit?ui=eyJHIjp7fX0);
+   */
 }
 
 .slide1 h2 {
@@ -192,12 +193,12 @@ header nav li a {
 }
 
 .upcoming-events {
-  background-color: #F1F3F3;
+  background-color: #ffffff;
   padding: 20px;
 }
 
 .past-events {
-  background-color: #F1F3F3;
+  background-color: #ffffff;
   padding: 20px;
 }
 
@@ -210,6 +211,7 @@ header nav li a {
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
 
 .events-container li {
@@ -319,11 +321,51 @@ header nav li a {
 /* Footer Styles */
 footer {
   background-color: #232f3e;
-  color: #fff;
+  color: #ffffff;
   padding: 10px;
   text-align: center;
+  background: url(https://img.freepik.com/free-vector/abstract-background-design_1151-186.jpg?w=740&t=st=1694957615~exp=1694958215~hmac=076c605e72abb58a9f2b4a984e4f17d9acb0f5cfb708ca6b03d51ffa31b64c38);
+ 
 }
 
 footer p {
   font-size: 0.8em;
 }
+
+/* .modal modal-body {    
+  
+    
+  overflow-x: hidden; /* Hide horizontal scrollbar 
+ 
+} */
+/* .btn-close{
+  /* button,
+input,
+optgroup,
+select,
+textarea
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+} */
+
+
+.modal .modal-body {  
+  
+  
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background: linear-gradient(transparent, #30ff00);
+
+
+}
+
+
+
+
+
