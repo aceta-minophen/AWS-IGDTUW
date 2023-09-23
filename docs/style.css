@@ -327,3 +327,14 @@ footer {
 footer p {
   font-size: 0.8em;
 }
+
+.past-events .modal-footer
+{
+  background: url(background.jpg);
+}
+
+
+.upcoming-events .modal-footer
+{
+  background: url(img.jpg);
+}
