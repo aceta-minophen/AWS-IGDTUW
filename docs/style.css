@@ -199,6 +199,7 @@ header nav li a {
 .past-events {
   background-color: #F1F3F3;
   padding: 20px;
+  
 }
 
 .events-container h2 {
@@ -327,4 +328,33 @@ footer {
 footer p {
   font-size: 0.8em;
 }
+.modal .modal-body {    
+  
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+ 
+}
+ /* Designing for scroll-bar */
+ .modal .modal-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
 
