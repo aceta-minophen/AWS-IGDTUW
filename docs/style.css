@@ -199,6 +199,7 @@ header nav li a {
 .past-events {
   background-color: #F1F3F3;
   padding: 20px;
+  
 }
 
 .events-container h2 {
@@ -328,6 +329,7 @@ footer p {
   font-size: 0.8em;
 }
 
+
 .past-events .modal-footer
 {
   background: url(background.jpg);
@@ -338,3 +340,4 @@ footer p {
 {
   background: url(img.jpg);
 }
+
